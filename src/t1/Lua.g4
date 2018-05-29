@@ -47,7 +47,7 @@ DOT_COMMA: ';' ;
 CADEIA: ([\\'] (~[\\'])* [\\']) | ('"' (~'"')* '"');
 
 ID : (LETRA|UNDERSCORE) ((LETRA|ALGARISMO|UNDERSCORE)+)?;
-NUMERO : ALGARISMO+;
+NUMERO : ('-')? ALGARISMO+;
 
 programa : bloco;
 
